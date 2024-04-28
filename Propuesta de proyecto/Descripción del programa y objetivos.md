@@ -1,5 +1,5 @@
 # Descripción del programa
-“Sistema de videojuegos tipo Tyson basado en progresión, obtenida mediante apuestas y minijuegos Mayan Gold” es un programa en C que ofrece a los usuarios una experiencia inspirada en casinos y minijuegos, donde estos últimos se basan en aspectos de la vida cotidiana. A medida que obtienen ganancias en los minijuegos, podrán acceder al casino donde podrán multiplicar sus ganancias para obtener recompensas que personalizan la experiencia del jugador o en su contraparte perder sus ganancias.
+“Sistema de videojuegos tipo Tyccon basado en progresión, obtenida mediante apuestas y minijuegos Mayan Gold” es un programa en C que ofrece a los usuarios una experiencia inspirada en casinos y minijuegos, donde estos últimos se basan en aspectos de la vida cotidiana. A medida que obtienen ganancias en los minijuegos, podrán acceder al casino donde podrán multiplicar sus ganancias para obtener recompensas que personalizan la experiencia del jugador o en su contraparte perder sus ganancias.
 
 # Objetivos general y especificos
 
