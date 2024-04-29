@@ -23,4 +23,3 @@
 | RNF-005 | Eficiencia de tiempo.         | El programa debe responder rápidamente a las acciones del usuario para proporcionar una experiencia de juego fluida.                                                                           | Alta      |            |            |            |      X     |
 | RNF-006 | Facilidad de comprensión.     | El uso del programa debe ser de muy fácil aprendizaje, es decir,  no debe tomar mucho tiempo en entender el funcionamiento de cada opcion disponible.                                          | Media     |            |      X     |            |            |
 | RNF-007 | Almacenamiento.               | El programa no debe ocupar demasiado espacio de almacenamiento del jugador.                                                                                                                    | Media     |            |            |            |      X     |
-x
