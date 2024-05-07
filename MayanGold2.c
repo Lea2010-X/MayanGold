@@ -19,107 +19,107 @@ typedef struct {
 //VARIABLE GLOBAL PARA EL SALDO
 float saldoJugador=1000;
 
-time_t ultimoJuegoTrabajar = 0; // Variable para almacenar la hora del último juego
+time_t ultimoJuegoTrabajar = 0; // Variable para almacenar la hora del Ãºltimo juego
 
 
 //PROTOTIPOS
 
 /*
-Función: menuPrincipal
-Propósito: Mostrar el menú principal del programa.
+FunciÃ³n: menuPrincipal
+PropÃ³sito: Mostrar el menÃº principal del programa.
 */
 void menuPrincipal();
 
 /*
-Función: mostrarInstrucciones
-Propósito: Mostrar las instrucciones del juego.
+FunciÃ³n: mostrarInstrucciones
+PropÃ³sito: Mostrar las instrucciones del juego.
 */
 void mostrarInstrucciones();
 
 /*
-Función: entrarAlCasino
-Propósito: Entrar al casino y mostrar el menú del casino.
+FunciÃ³n: entrarAlCasino
+PropÃ³sito: Entrar al casino y mostrar el menÃº del casino.
 */
 void entrarAlCasino();
 
 /*
-Función: menuCasino
-Propósito: Mostrar el menú del casino con las opciones de juego.
+FunciÃ³n: menuCasino
+PropÃ³sito: Mostrar el menÃº del casino con las opciones de juego.
 */
 void menuCasino();
 
 /*
-Función: jugarBlackjack
-Propósito: Implementar el juego de Blackjack.
+FunciÃ³n: jugarBlackjack
+PropÃ³sito: Implementar el juego de Blackjack.
 */
 void jugarBlackjack();
 
 /*
-Función: obtenerCarta
-Propósito: Obtener una carta aleatoria del mazo.
-Parámetro 1: cartas - Un arreglo de enteros representando las cartas disponibles en el mazo.
+FunciÃ³n: obtenerCarta
+PropÃ³sito: Obtener una carta aleatoria del mazo.
+ParÃ¡metro 1: cartas - Un arreglo de enteros representando las cartas disponibles en el mazo.
 */
 int obtenerCarta(int cartas[]);
 
 /*
-Función: calcularValorMano
-Propósito: Calcular el valor total de una mano en el juego de Blackjack.
-Parámetro 1: mano - Un puntero a una estructura Mano que representa la mano del jugador o la casa.
+FunciÃ³n: calcularValorMano
+PropÃ³sito: Calcular el valor total de una mano en el juego de Blackjack.
+ParÃ¡metro 1: mano - Un puntero a una estructura Mano que representa la mano del jugador o la casa.
 */
 int calcularValorMano(Mano *mano);
 
 /*
-Función: jugarRuleta
-Propósito: Implementar el juego de Ruleta.
+FunciÃ³n: jugarRuleta
+PropÃ³sito: Implementar el juego de Ruleta.
 */
 void jugarRuleta();
 
 int generarNumeroAleatorio();
 /*
-Función: entrarMinijuegos
-Propósito: Entrar a la sección de minijuegos y mostrar el menú de minijuegos.
+FunciÃ³n: entrarMinijuegos
+PropÃ³sito: Entrar a la secciÃ³n de minijuegos y mostrar el menÃº de minijuegos.
 */
 void entrarMinijuegos();
 
 /*
-Función: menuMinijuegos
-Propósito: Mostrar el menú de minijuegos con las opciones disponibles.
+FunciÃ³n: menuMinijuegos
+PropÃ³sito: Mostrar el menÃº de minijuegos con las opciones disponibles.
 */
 void menuMinijuegos();
 
 /*
-Función: jugarTrabajar
-Propósito: Implementar el minijuego "Trabajar" donde el jugador puede ganar dinero virtual.
+FunciÃ³n: jugarTrabajar
+PropÃ³sito: Implementar el minijuego "Trabajar" donde el jugador puede ganar dinero virtual.
 */
 void jugarTrabajar();
 
 /*
-Función: mostrarEstadisticas
-Propósito: Mostrar las estadísticas del jugador en el casino.
+FunciÃ³n: mostrarEstadisticas
+PropÃ³sito: Mostrar las estadÃ­sticas del jugador en el casino.
 */
 void mostrarEstadisticas();
 
 /*
-Función: tiendaVirtual
-Propósito: Acceder a la tienda virtual para comprar artículos con el dinero virtual ganado.
+FunciÃ³n: tiendaVirtual
+PropÃ³sito: Acceder a la tienda virtual para comprar artÃ­culos con el dinero virtual ganado.
 */
 void tiendaVirtual();
 
 /*
-Función: guardarYcargarProgreso
-Propósito: Guardar y cargar el progreso del jugador en el juego.
+FunciÃ³n: guardarYcargarProgreso
+PropÃ³sito: Guardar y cargar el progreso del jugador en el juego.
 */
 void guardarYcargarProgreso();
 
 int main() {
 	setlocale(LC_ALL,"");
-    srand(time(NULL)); // Inicializar la semilla para la generación de números aleatorios
+    srand(time(NULL)); // Inicializar la semilla para la generaciÃ³n de nÃºmeros aleatorios
 
     bool salir = false;
     while (!salir) {
         menuPrincipal();
         int opcion;
-        printf("\nIngrese su opción: ");
+        printf("\nIngrese su opciÃ³n: ");
         scanf("%d", &opcion);
         switch (opcion) {
             case 1:
@@ -143,28 +143,28 @@ int main() {
                 salir = true;
                 break;
             default:
-                printf("Opción no válida. Por favor, elija una opción válida.\n");
+                printf("OpciÃ³n no vÃ¡lida. Por favor, elija una opciÃ³n vÃ¡lida.\n");
         }
     }
 
-    printf("¡Gracias por jugar en el casino!\n");
+    printf("Â¡Gracias por jugar en el casino!\n");
 
     return 0;
 }
 
 void menuPrincipal() {
-    printf("\n===== MENÚ PRINCIPAL =====\n");
+    printf("\n===== MENÃš PRINCIPAL =====\n");
     printf("1. Instrucciones\n");
     printf("2. Entrar al casino\n");
     printf("3. Entrar a los minijuegos\n");
-    printf("4. Estadísticas\n");
+    printf("4. EstadÃ­sticas\n");
     printf("5. Tienda virtual\n");
     printf("6. Guardar y cargar progreso\n");
     printf("7. Salir\n");
 }
 
 void mostrarInstrucciones() {
-    // Implementación de las instrucciones
+    // ImplementaciÃ³n de las instrucciones
 }
 
 void entrarAlCasino() {
@@ -172,7 +172,7 @@ void entrarAlCasino() {
     while (!salir) {
         menuCasino();
         int opcion;
-        printf("\nIngrese su opción: ");
+        printf("\nIngrese su opciÃ³n: ");
         scanf("%d", &opcion);
         switch (opcion) {
             case 1:
@@ -189,13 +189,13 @@ void entrarAlCasino() {
                 break;
             
             default:
-                printf("Opción no válida. Por favor, elija una opción válida.\n");
+                printf("OpciÃ³n no vÃ¡lida. Por favor, elija una opciÃ³n vÃ¡lida.\n");
         }
     }
 }
 
 void menuCasino() {
-    printf("\n===== MENÚ DEL CASINO =====\n");
+    printf("\n===== MENÃš DEL CASINO =====\n");
     printf("1. Jugar Blackjack\n");
     printf("2. Jugar Ruleta\n");
     printf("3. Jugar Tragamonedas\n");
@@ -205,11 +205,11 @@ void menuCasino() {
 void jugarBlackjack() {
     printf("===== Bienvenido al Blackjack =====\n");
     printf("Reglas del Blackjack:\n"); 
-    printf("1. Tienes que llegar lo más cerca posible a 21\n");
+    printf("1. Tienes que llegar lo mÃ¡s cerca posible a 21\n");
     printf("2. Si te pasas, pierdes\n");
     printf("3. Las cartas van a parar de repartirse hasta que superen o igualen 17\n");
-    printf("4. Cada carta numérica tiene su valor normal, el K, Q y J valen 10\n");
-    printf("5. Los Ases pueden valer 1 u 11 según convenga\n\n");
+    printf("4. Cada carta numÃ©rica tiene su valor normal, el K, Q y J valen 10\n");
+    printf("5. Los Ases pueden valer 1 u 11 segÃºn convenga\n\n");
     
     float apuesta;
 
@@ -253,7 +253,7 @@ void jugarBlackjack() {
         // Turno del jugador
         char op;
         while (valorManoJugador < 21 && op != 'n') {
-            printf("¿Quieres otra carta? (s/n): ");
+            printf("Â¿Quieres otra carta? (s/n): ");
             scanf(" %c", &op);
             if (op == 's') {
                 int nuevaCarta = obtenerCarta(cartas);
@@ -279,19 +279,19 @@ void jugarBlackjack() {
 
         // Determinar el ganador
         if (valorManoJugador > 21) {
-            printf("¡Te has pasado! Pierdes.\n");
+            printf("Â¡Te has pasado! Pierdes.\n");
         } else if (valorManoJugador == valorManoCasa) {
-            printf("¡Empate!\n");
+            printf("Â¡Empate!\n");
             saldoJugador += apuesta;
         } else if (valorManoJugador > valorManoCasa || valorManoCasa > 21) {
-            printf("¡Ganaste!\n");
+            printf("Â¡Ganaste!\n");
             saldoJugador += apuesta*2;
         } else {
             printf("Gana la casa.\n");
         }
 
         printf("-------------------------------------------------\n");
-        printf("¿Quieres seguir jugando? (s/n): ");
+        printf("Â¿Quieres seguir jugando? (s/n): ");
         scanf(" %c", &continuar);
     }
 }
@@ -355,7 +355,7 @@ void jugarRuleta(){
 	    
 	     switch(opcion_apuesta) {
 	    	case 1: // Apuesta Directa
-	    		printf("Ingresa el número al que quieres apostar (0-36): ");
+	    		printf("Ingresa el nÃºmero al que quieres apostar (0-36): ");
 	    		scanf("%d",&selecTablero);
 	    		break;
 	    	case 2: // Apuesta por Docenas
@@ -379,7 +379,7 @@ void jugarRuleta(){
 	    		scanf("%d",&selecTablero);
 	    		break;
 	    	default:
-	    		printf("Opción de apuesta no válida.\n");
+	    		printf("OpciÃ³n de apuesta no vÃ¡lida.\n");
 	    		break;
 	    }
     	printf("Ingresa la cantidad de tu apuesta: ");
@@ -405,10 +405,10 @@ void jugarRuleta(){
 		
 		
 	    printf("-----------------\n");
-	    printf("El número ganador es: %d %s\n", numeroGanador,color);
+	    printf("El nÃºmero ganador es: %d %s\n", numeroGanador,color);
 	    printf("-----------------\n");
 	    
-	//Verificar si el jugador ganó
+	//Verificar si el jugador ganÃ³
 	switch(opcion_apuesta) {
 	    	case 1: // Apuesta Directa
 	    		if(selecTablero==numeroGanador){
@@ -512,21 +512,21 @@ void jugarRuleta(){
 				
 	    		break;
 	    	default:
-	    		printf("Opción de apuesta no válida.\n");
+	    		printf("OpciÃ³n de apuesta no vÃ¡lida.\n");
 	    		break;
 	    }
 	    if(acierto==1){
 	    	printf("Felicidades! Tu apuesta fue ganadora! Ganaste %d pesos\n", ganancia);
 		}else{
-			printf("Lo sentimos, tu apuesta no ganó.\n");
+			printf("Lo sentimos, tu apuesta no ganÃ³.\n");
 		}
         printf("-------------------------------------------------\n");
-        printf("¿Quieres seguir jugando? (s/n): ");
+        printf("Â¿Quieres seguir jugando? (s/n): ");
         scanf(" %c", &continuar);
     }
 }
 
-// Función para generar un número aleatorio entre min y max (incluyendo min y max)
+// FunciÃ³n para generar un nÃºmero aleatorio entre min y max (incluyendo min y max)
 int generarNumeroAleatorio(int min, int max) {
     return min + rand() % (max - min + 1);
 }
@@ -537,11 +537,11 @@ void entrarMinijuegos(){
     while (!salir) {
         menuMinijuegos();
         int opcion;
-        printf("\nIngrese su opción: ");
+        printf("\nIngrese su opciÃ³n: ");
         scanf("%d", &opcion);
         switch (opcion) {
             case 1:
-                if (time(NULL) - ultimoJuegoTrabajar >= 60 || ultimoJuegoTrabajar == 0) { // Validar si han pasado 10 segundos desde el último juego
+                if (time(NULL) - ultimoJuegoTrabajar >= 60 || ultimoJuegoTrabajar == 0) { // Validar si han pasado 10 segundos desde el Ãºltimo juego
                     jugarTrabajar(); // Iniciar el minijuego
                 } else {
                     printf("Debes esperar un minuto antes de volver a jugar.\n");
@@ -558,12 +558,12 @@ void entrarMinijuegos(){
                 break;
             
             default:
-                printf("Opción no válida. Por favor, elija una opción válida.\n");
+                printf("OpciÃ³n no vÃ¡lida. Por favor, elija una opciÃ³n vÃ¡lida.\n");
         }
     }
 }
 void menuMinijuegos(){
-    printf("\n===== MENÚ DE MINIJUEGOS =====\n");
+    printf("\n===== MENÃš DE MINIJUEGOS =====\n");
     printf("1. Trabajar\n");
     printf("2. Jugar Mente Maestra\n");
     printf("3. Jugar Pesca\n");
@@ -577,11 +577,11 @@ void jugarTrabajar() {
     char *mensajes[] = {
         "Trabajaste 18 horas en la maquiladora y te pagaron ",
         "Realizaste un trabajo freelance y recibiste un pago de ",
-        "Hiciste algunas tareas en línea y obtuviste ",
+        "Hiciste algunas tareas en lÃ­nea y obtuviste ",
         "Fuiste a trabajar como repartidor y ganaste ",
-        "Te contrataron para una sesión de tutoría y recibiste ",
+        "Te contrataron para una sesiÃ³n de tutorÃ­a y recibiste ",
         "Trabajaste en la cafeteria de FMAT y te dieron ",
-        "Le hiciste un ADA de Calculo a tu amigo y te pagó ",
+        "Le hiciste un ADA de Calculo a tu amigo y te pagÃ³ ",
         "Renunciaste de Messinas y te dieron de finiquito "
     };
 
@@ -591,22 +591,22 @@ void jugarTrabajar() {
     printf("%s%d pesos.", mensajes[indice_mensaje],pago);
     saldoJugador+=pago;
 
-     // Almacenar la hora en la que terminó el juego
+     // Almacenar la hora en la que terminÃ³ el juego
     ultimoJuegoTrabajar = time(NULL);
 
-    printf("\nRegresando al menú principal...\n");
+    printf("\nRegresando al menÃº principal...\n");
 
 }
 
 void mostrarEstadisticas() {
-    // Implementación de mostrar estadísticas(En construccion)
+    // ImplementaciÃ³n de mostrar estadÃ­sticas(En construccion)
 }
 
 void tiendaVirtual() {
-    // Implementación de la tienda virtual(En construccion)
+    // ImplementaciÃ³n de la tienda virtual(En construccion)
 }
 
 void guardarYcargarProgreso() {
-    // Implementación de guardar y cargar progreso(En construccion)
+    // ImplementaciÃ³n de guardar y cargar progreso(En construccion)
 }
 
