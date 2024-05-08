@@ -8,8 +8,8 @@
 Desarrollar un juego interactivo con el objetivo de fomentar habilidades estratégicas en la gestión de recursos y pensamiento en juegos de azar entre los jugadores. La meta es proporcionar una plataforma que sea entretenida y que, al mismo tiempo, mejore las habilidades cognitivas de los jugadores. Se fomenta la rejugabilidad al ofrecer una variedad de escenarios y desafíos que mantienen a los jugadores comprometidos y motivados.
 
 ## Objetivos especificos
-1.-Diseñar y desarrollar mecánicas de juego que requieran habilidades cognitivas, como cálculo de probabilidades, toma de decisiones y gestión de riesgos, y que proporcionen opciones para invertir, apostar y aumentar sus fondos virtuales dentro del juego.
-2.-Garantizar que el progreso y las recompensas se mantienen incluso después de cerrar y volver a abrir el programa, y proporcionar incentivos para que los usuarios regresen y sigan disfrutando del juego.
-3.-Diseñar una interfaz de usuario intuitiva y agradable visualmente que proporcione información acerca de las opciones disponibles y estadísticas actuales
-4.-Asegurar la compatibilidad con los sistemas elegidos y optimizar la eficiencia del almacenamiento.
+- Diseñar y desarrollar mecánicas de juego que requieran habilidades cognitivas, como cálculo de probabilidades, toma de decisiones y gestión de riesgos, y que proporcionen opciones para invertir, apostar y aumentar sus fondos virtuales dentro del juego.
+- Garantizar que el progreso y las recompensas se mantienen incluso después de cerrar y volver a abrir el programa, y proporcionar incentivos para que los usuarios regresen y sigan disfrutando del juego.
+- Diseñar una interfaz de usuario intuitiva y agradable visualmente que proporcione información acerca de las opciones disponibles y estadísticas actuales
+- Asegurar la compatibilidad con los sistemas elegidos y optimizar la eficiencia del almacenamiento.
 
