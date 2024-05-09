@@ -9,7 +9,7 @@
 |                         | 3.1  | El jugador selecciona las instrucciones de "Casino".                                                                                                                         |
 |                         | 3.2  | El jugador selecciona las instrucciones de "Minijuegos".                                                                                                                     |
 |                         | 3.3  | El jugador selecciona las instrucciones de "Tienda Virtual".                                                                                                                 |
-|                         | 3.4  | El jugador regresa al menú principal                                                                                                                                         |
+|                         | 3.4  | El jugador regresa al menú principal.                                                                                                                                         |
 | Segunda ruta de  acción | 4    | El usuario ingresa en "Entrar al casino". (CU-002)                                                                                                                           |
 |                         | 4.1  | El usuario regresa al menú principal                                                                                                                                         |
 | Tercera ruta de acción  | 5    | El usuario ingresa en "Minijuegos" (CU-003)                                                                                                                                  |
